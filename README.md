@@ -4,10 +4,18 @@ Explain the questions well!!
 
 ### 1- Why do we should include script tags at the very end of an html file, before closing </body>?
 If you put it at the begin, it will read first the tags. putting at the end read first the code. wich is better eand faster.
+putting at the begin cause a bad user experience. Your website basically stops loading until you've downloaded all scripts. If there's one thing that users hate it's waiting for a website to load.
 ### 2 - What is a middleware?
-Middleware is computer software that connects software components or applications.
+Middleware is any number of functions that are invoked by the Express.js
+Middleware functions can perform the following tasks:
+
+Execute any code.
+Make changes to the request and the response objects.
+End the request-response cycle.
+Call the next middleware function in the stack.
 
 ### 3 - Why do we use express.static() middleware?
+To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
 we use that to read the public folder where for example you can storage images.
 
 ### 4 - What is favicon.ico ?
@@ -21,14 +29,15 @@ dont know
 
 
 ### 7 - Why do we use methodOverride middleware ?
+use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
 If you want to simulate DELETE and PUT, methodOverride is for that
 
 ### 8 - What are the differences between sessions and cookies ?
-
+ Sessions have a unique identifier that maps them to specific users. This identifier can be passed in the URL or saved into a session cookie.
 Sessions are server-side files that contain user information, while cookies are client-side files
 
 ### 9 - Why do we use a session middleware ?
-The session middleware provides a way for creating sessions using session stores
+A session store is a provision for storing session data in the backend. Sessions based on session stores can store a large amount of data that is well hidden from the user.
 
 ### 10 - Why do we use a build process ?
 you can use gulp for example to allow for task automation. Also take all your projects html,js,css, concatenate them and minify them
